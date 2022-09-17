@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реєстрація</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bg-image"></div>
+
+        <header class="header">
+            <div class="header__container container">
+                <nav class="header__menu menu">
+                    <a class="menu__link" href="../index.html">ГОЛОВНА</a>
+                    <a class="menu__link" href="articles.html">СТАТТІ</a>            
+                    <a class="menu__link" href="catalog.html">КАТАЛОГ</a>  
+                    <a class="menu__link" href="contacts.html">КОНТАКТИ</a>
+                    <a class="menu__link" href="gallery.html">ГАЛЕРЕЯ</a>
+                    <a class="menu__link" href="page-nav.html">НАВІГАЦІЯ</a>
+                    <a class="menu__link active" href="registration.html">РЕЄСТРАЦІЯ</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="content__container container">
+                <section class="content__registration registration content-padding">
+                    <div class="registration__title">Форма реєстрації</div>
+
+                    <form class="registration__form form-registration" action="https://tests.fomenko.top/echo/index.php" method="get">
+                            
+                        <div class="form-registration__item">
+                            <label class="form-registration__label" for="form-name">Прізвище Ім'я:</label>
+                            <input class="form-registration__input big-letter" id="form-name" name="name" type="text">
+                        </div>
+
+                        <div class="form-registration__item">
+                            <label class="form-registration__label" for="form-img">Додати фотографію:</label>
+                            <input class="form-registration__input" id="form-img" name="image" type="file" accept=".jpg, .png, .gif">
+                        </div>
+
+                        <div class="form-registration__item">
+                            <label class="form-registration__label" for="form-mail">Адреса електроної пошти:</label>
+                            <input class="form-registration__input" id="form-mail" type="email" name="mail">
+                        </div>
+
+                        <div class="form-registration__item">
+                            <label class="form-registration__label" for="form-password">Пароль:</label>
+                            <input class="form-registration__input" id="form-password" type="password" name="password">
+                        </div>
+
+                        <div class="form-registration__item">
+                            <label class="form-registration__label" for="form-adress">Адреса сайту:</label>
+                            <input class="form-registration__input" id="form-adress" type="text" name="adress-site" value="https://mysite.name">
+                        </div>
+
+                        <div class="form-registration__item">
+                            <label class="form-registration__label" for="date-birth">Дата народження:</label>
+                            <input class="form-registration__input" id="date-birth" type="date" name="date-birth">
+                        </div>
+
+                        <div class="form-registration__checkboxes checkbox-reg">
+                            <div class="checkbox-reg__title">Яку кухню ви б обрали?</div>
+                                
+                            <div class="checkbox-reg__item">
+                                <label class="checkbox-reg__label" for="chinese">Китайська</label>
+                                <input class="checkbox-reg__input" id="chinese" type="checkbox" name="kitchen-1" value="Китайська">
+                            </div>
+
+                            <div class="checkbox-reg__item">
+                                <label class="checkbox-reg__label" for="european">Європейська</label>
+                                <input class="checkbox-reg__input" id="european" type="checkbox" name="kitchen-2" value="Європейська">
+                            </div>
+
+                            <div class="checkbox-reg__item">
+                                <label class="checkbox-reg__label" for="japanese">Японська</label>
+                                <input class="checkbox-reg__input" id="japanese" type="checkbox" name="kitchen-3" value="Японська">
+                            </div>
+
+                            <div class="checkbox-reg__item">
+                                <label class="checkbox-reg__label" for="american">Американська</label>
+                                <input class="checkbox-reg__input" id="american" type="checkbox" name="kitchen-4" value="Американська">
+                            </div>
+                        </div>
+
+                        <div class="form-registration__multiply">
+                            <label class="form-registration__label" for="form-floor">Виберіть підлогу:</label>
+                            <select class="form-registration__select" id="form-floor" name="floor">
+                                <option value="Ламінат">Ламінат</option>
+                                <option value="Лінолеум">Лінолеум</option>
+                                <option value="Паркет">Паркет</option>
+                                <option value="Керамічна плитка">Керамічна плитка</option>
+                            </select>
+                        </div>
+
+                        <div class="form-registration__about">
+                            <div class="form-registration__title">Про себе</div>
+
+                            <div class="form-registration__radio radio-reg">
+                                <div class="radio-reg__item">
+                                    <label class="radio-reg__label" for="man">Чоловік</label>
+                                    <input class="radio-reg__input" id="man" type="radio" name="sex" value="man">
+                                </div>
+
+                                <div class="radio-reg__item">
+                                    <label class="radio-reg__label" for="woman">Жінка</label>
+                                    <input class="radio-reg__input" id="woman" type="radio" name="sex" value="woman">
+                                </div>
+                            </div>
+
+                            <div class="form-registration__textarea">
+                                <label class="form-registration__label" for="txt">Напишіть нам про себе:</label>
+                                <textarea class="form-registration__area" name="about-user" id="txt" cols="40" rows="5"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-registration__buttons">
+                            <button class="buttons-items__button" type="submit">Зареєструватися</button>
+
+                            <button class="buttons-items__button" type="reset">Очистити форму</button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__copy">&copy; Volodymyr Matviienko</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

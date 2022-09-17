@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакти</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="bg-image"></div>
+
+        <header class="header">
+            <div class="header__container container">
+                <nav class="header__menu menu">
+                    <a class="menu__link" href="../index.html">ГОЛОВНА</a>
+                    <a class="menu__link" href="articles.html">СТАТТІ</a>            
+                    <a class="menu__link" href="catalog.html">КАТАЛОГ</a>  
+                    <a class="menu__link active" href="contacts.html">КОНТАКТИ</a>
+                    <a class="menu__link" href="gallery.html">ГАЛЕРЕЯ</a>
+                    <a class="menu__link" href="page-nav.html">НАВІГАЦІЯ</a>
+                    <a class="menu__link" href="registration.html">РЕЄСТРАЦІЯ</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="content">
+            <div class="content__container container">
+                <section class="content__contacts contacts content-padding">
+                    <h1 class="contact__title main-title">Контакти</h1>
+
+                    <div class="contact__adress">
+                        <div class="contact__subtitle">Адреса:</div>
+
+                        <p class="contacts__text">м. Вишгород, пр. Шевченка, 2Г</p>
+                    </div>
+                    
+                    <div class="contacts__time">
+                        <div class="contact__subtitle">Час роботи:</div>
+
+                        <p class="contacts__text">Пн.-Пт.: с 10:00 до 18:00</p>
+                    </div>
+
+                    <div class="contacts__location">
+                        <div class="contact__subtitle">Як дістатися до нас:</div>
+                        <iframe class="contacts__video" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1266.729989452096!2d30.48708137609275!3d50.58140329800142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d35b88dbc4df%3A0xd96964fe7a395dde!2sKids%20Code!5e0!3m2!1sru!2sua!4v1661962248548!5m2!1sru!2sua" width="700" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+
+                    <div class="contacts__form form-contact">
+                        <div class="form-contact__title">Форма зворотного зв'язку</div>
+
+                        <form class="form-contact__body" action="https://tests.fomenko.top/echo/index.php" method="get">
+
+                            <div class="form-contact__item">
+                                <label class="form-contact__label" for="form-name">Ваше ім'я:</label>
+                                <input class="form-contact__input big-letter" type="text" id="form-name" name="name">
+                            </div>
+
+                            <div class="form-contact__item">
+                                <label class="form-contact__label" for="form-phone">Ваш телефон:</label>
+                                <input class="form-contact__input" type="number" id="form-phone" name="phone">
+                            </div>
+
+                            <div class="form-contact__item">
+                                <label class="form-contact__label" for="form-email">Ваш email:</label>
+                                <input class="form-contact__input" type="email" id="form-email" name="email">
+                            </div>
+
+                            <div class="form-contact__item">
+                                <label class="form-contact__label" for="form-text">Якщо виникли питання - заповніть форму:</label>
+                                <textarea class="form-contact__input textarea" name="question" id="form-text" cols="30" rows="10"></textarea>
+                            </div>
+
+                            <div class="form-contact__buttons button-items">
+                                <button class="button-items__button" type="submit">Відправити</button>
+
+                                <button class="button-items__button" type="reset">Очистити форму</button>
+                            </div>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__copy">&copy; Volodymyr Matviienko</div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
